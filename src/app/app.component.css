@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+
+  .row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+.side{
+    flex: 40%;
+    /* padding: 20px; */
+}
+.topSide{
+    
+    background-image: url(../assets/images/blob-small.svg);
+    min-height: 423px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 66%;
+    background-position: -84px 0;
+}
+.topMain{
+  flex: 60%;
+  padding: 20px;
+  background-image: url(../assets/images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 270%;
+}
+.handShakeImg{
+    position: absolute;
+    top: 36%;
+    left: 6%;
+    width: 34%;
+    height: 46%;
+}
+.simpleHead{
+    margin:2% 0 0 9%;
+    position:absolute;
+    line-height: 30px;
+}
+.simpleHead::after{
+    content: "";
+    display: block;
+    margin: 10px 0 0 0;
+    border: 2px solid #000;
+    background: #000000 0% 0% no-repeat padding-box;
+    width: 40%;
+    border-radius: 13px;
+
+}
+.dotsBg{
+    height: 70px;
+    width: 23%;
+    position: absolute;
+    top: 76%;
+    left: 30%;
+    background-image: url(../assets/images/accounting_dots.svg);
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    position: absolute;
+    width: 22%;
+    left: 58%;
+    top: 30%;
+    background: white;
+    border-radius: 18px;
+    z-index: 1;
+}
+.cardContainer{
+        padding: 2px 16px;
+}
+.cardHeading{
+    background: #f1f1f1;
+    padding: 5%;
+    text-align: center;
+    margin:0;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.calculatorItem{
+    padding: 3%;
+    font-size: 14px;
+}
+.selectedRange{
+    margin-top: 4%;
+}
+.rangeLeft{
+    font-size: 10px;
+    float: left;
+    margin-top: 2%;
+}
+.rangeRight{
+    font-size: 10px;
+    float: right;
+    margin-top: 2%;
+}
+.inputOfCal{
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 4%;
+    width: 100%;
+}
+input:focus{
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.sideCard{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 40%;
+    position: absolute;
+    width: 13%;
+    left: 81%;
+    top: 44%;
+    background: #663399;
+    color: #fff;
+    min-height: 276px;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 34px;
+}
+.mb0{
+    margin-bottom: 0;
+}
+.lowOpacity{
+    opacity: 0.4;
+}
+.textCenter{
+    text-align: center;
+}
+.smallFont{
+    font-size: 10px;
+}
+.mt0{
+    margin-top: 0;
+}
+.getMoney{
+    color: #663399;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+    width: 54%;
+    cursor: pointer;
+}
+.headingList{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left: 18%;
+}
+.loginBtn{
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+    padding: 1px 14px;
+    font-size: 12px;
+}
+.getStartedBtn{
+    background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    color:white;
+    padding: 4px 15px;
+    font-size: 12px;
+}
+.bigBotsBg{
+    height: 70px;
+    width: 23%;
+    position: absolute;
+    top: 92%;
+    left: 72%;
+    background-image: url(../assets/images/accounting_dots.svg);
+}
+.waveBg{
+    background-image: url(../assets/images/wave_bg.png);
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:23%;
+    font-size: 14px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:23%;
+    font-size: 14px;
+}
+.third{
+    flex:54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.smallCard{
+    box-shadow: 0px 0px 30px #2321321F;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: #f9f9f9;
+}
+.smallCard:hover{
+    background-color: #9F62C9;
+    color:white;
+}
+.cardImg{
+    width: 60px;
+    margin: 3% 8%;
+}
+.smallCard p{
+    margin:5%;
+}
+.lightColor{
+    color:#00000033
+}
+.boost::after{
+    content: "";
+    display: block;
+    margin: 10px 0 0 0;
+    border: 2px solid #000;
+    background: #000000 0% 0% no-repeat padding-box;
+    width: 40%;
+    border-radius: 13px;
+}
+.openAccountBtn{
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    padding: 2% 4%;
+    font-size: 12px;
+    margin-top: 5%;
+}

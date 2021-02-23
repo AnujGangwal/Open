@@ -1,0 +1,128 @@
+
+<div class="row">
+  <div class="side">
+    <div>
+      <img src="../assets/images/logo.png" width="16%" />
+    </div>
+  <div>
+  <div class="topSide">
+    <div>
+      <h1 class="simpleHead">
+        <span>We make it super <br>Simple</span>
+      </h1>
+    </div>
+    <!-- <h1>Simple</h1> -->
+    <img class="handShakeImg" src="../assets/images/collect_img-video.png" width= 652px;
+    height= 365px; />
+    <div class="dotsBg"></div>
+  </div>
+  </div>
+</div>
+  <div class="topMain">
+    <ul class="headingList">
+      <li>Product</li>
+      <li>Solution</li>
+      <li>Pricing</li>
+      <li class="loginBtn">Login</li>
+      <li class="getStartedBtn">Get Started</li>
+    </ul>
+    <div class="card">
+      
+        <h4 class="cardHeading">Eligibility Calculator</h4> 
+        <div class="cardContainer">
+            <div class="calculatorItem" style="margin-top:3%">
+              <label>Monthly Income</label>
+              <div class="selectedRange">
+                <span> &#8377; {{monthlyIncome}}</span>
+                <div class="selectedRange">
+                  <p-slider [(ngModel)]="monthlyIncome" [min]="minMonthlyIncome" [max]="maxMonthlyIncome"></p-slider>
+                  <span class="rangeLeft">&#8377; {{minMonthlyIncome}}</span>
+                  <span class="rangeRight">&#8377; {{maxMonthlyIncome}}</span>
+                </div>
+            </div>
+            </div>
+            <div class="calculatorItem" style="margin-top: 6%;">
+              <label>Monthly Expense</label>
+              <div class="selectedRange">
+                <span> &#8377; {{monthlyExpense}}</span>
+                <div class="selectedRange">
+                  <p-slider [(ngModel)]="monthlyExpense" [max]="100000"></p-slider>
+                  <!-- <span class="rangeLeft">&#8377; 100000</span>
+                  <span class="rangeRight">&#8377; 300000</span> -->
+                </div>
+            </div>
+            </div>
+            <div class="calculatorItem" style="margin-top: 6%;">
+              <label>Repayment Tenure</label>
+              <br>
+              <!-- <input type="text" class="inputOfCal" [(ngModel)]="repaymentTenure" /> -->
+              <select class="inputOfCal" [(ngModel)]="repaymentTenure">
+                <option *ngFor="let data of repaymentTenureList" [value]="data">{{data}}</option>
+              </select>
+            </div>
+            <div class="calculatorItem" style="margin-top: 4%;">
+              <span>Do you have any existing loan</span><span style="margin-left:2%"><p-inputSwitch [(ngModel)]="loanExist"></p-inputSwitch></span>
+            </div>
+            <div class="calculatorItem" *ngIf="loanExist" style="margin-top: 4%;">
+              <label>EMI of existing loan (optional)</label>
+              <input type="text" class="inputOfCal" [(ngModel)]="emi" />
+            </div>
+        </div>
+    </div>
+    <div class="sideCard">
+      <div class="textCenter" style="margin-top: 36%;">
+        <p class="mb0 lowOpacity">Loan Amount</p>
+        <p class="mt0">&#8377; 100000</p>
+      </div>
+      <div class="textCenter" style="margin-top: 18%;">
+        <p class="mb0 lowOpacity">Your EMI will be</p>
+        <p class="mt0">&#8377; 15000</p>
+      </div>
+      <div class="textCenter" style="margin-top: 18%;">
+        <button class="getMoney">Get Money</button>
+      </div>
+    </div>
+    <div class="bigBotsBg"></div>
+  </div>
+</div>
+
+<div class="row waveBg">
+  <div class="first">
+    <div class="smallCard" style="margin-left: 17%;">
+        <img class="cardImg" src="../assets/images/paper.png" />
+        <p><b>Quick cash disbursement</b></p>
+        <p>Get terms loans that your business needs within 72 hrs</p>
+    </div>
+    <div class="smallCard" style="margin-left: 17%;margin-top:10%;">
+        <img class="cardImg" src="../assets/images/low-interest.png" />
+        <p><b>Low-interest rate</b></p>
+        <p>Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+    </div>
+      <div class="smallCard" style="margin-left: 17%;margin-top:10%;">
+          <img class="cardImg" src="../assets/images/paper.png" />
+          <p><b>Zero Paperwork</b></p>
+          <p>Get started instantly by submitting only your basic details & bank statements</p>
+      </div>
+  </div>
+  <div class="second">
+    <div class="smallCard" style="margin-left: 10%; margin-top: 36%;">
+      <img class="cardImg" src="../assets/images/computer.png" />
+      <p><b>Ace your business finances</b></p>
+      <p>Manage banking, accounting & everything in between, on one platform</p>
+    </div>
+    <div class="smallCard" style="margin-left: 10%;">
+      <img class="cardImg" src="../assets/images/covid.png" />
+      <p><b>Loans to fight COVID-19</b></p>
+      <p>Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+    </div>
+  </div>
+  <div class="third">
+    <div>
+      <h2 class="boost" style="width: 55%;">Boost your business with Open</h2>
+      <p class="lightColor" style="margin: 6% 0px;">Get your hands on a term loan that’s crafted for your business</p>
+      <div>
+        <button class="openAccountBtn">Get an Open Account</button>
+      </div>
+    </div>
+  </div>
+</div>
